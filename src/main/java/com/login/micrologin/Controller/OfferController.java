@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/offer")
+@CrossOrigin(origins = "http://localhost:5173")
 public class OfferController {
     private final IOfferService _offerService;
 

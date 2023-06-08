@@ -3,13 +3,11 @@ package com.login.micrologin.Controller;
 import com.login.micrologin.Entity.User;
 import com.login.micrologin.Interface.IService.IUserService;
 import com.login.micrologin.Service.User.UserResponse;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/user")
+@CrossOrigin(origins = "http://localhost:5173")
 public class UserController {
     private final IUserService userService;
 

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/postulantOffert")
+@CrossOrigin(origins = "http://localhost:5173")
 public class PostulantOfferController {
     private final IPostulantOfferService _postulantOfferService;
     public PostulantOfferController(IPostulantOfferService _postulantOfferService){

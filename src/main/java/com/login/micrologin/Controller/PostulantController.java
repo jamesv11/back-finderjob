@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/postulant")
+@CrossOrigin(origins = "http://localhost:5173")
 public class PostulantController {
     private final IPostulantService _postulantService;
     public PostulantController(IPostulantService postulantService){

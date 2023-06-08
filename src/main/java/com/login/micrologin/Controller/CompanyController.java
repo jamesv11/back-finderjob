@@ -1,5 +1,4 @@
 package com.login.micrologin.Controller;
-
 import com.login.micrologin.Entity.Company;
 import com.login.micrologin.Interface.IService.ICompanyService;
 import com.login.micrologin.Service.Company.ServiceCompanyResponse;
@@ -10,6 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/company")
+@CrossOrigin(origins = "http://localhost:5173")
 public class CompanyController {
     private final ICompanyService companyService;
 
